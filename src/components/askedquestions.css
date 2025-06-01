@@ -1,0 +1,50 @@
+/*Styling file for the askquestion component */
+.accordion {
+  width: 700px;
+  margin: 20px auto;
+}
+
+/* Styles each individual box that has question and it answer */
+.accordion-item {
+  background-color: #2d2d3a; 
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(16, 15, 15, 0.1);
+}
+
+/* Styles the header/title area of each accordion item (clickable part) */
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(138deg, rgba(134, 50, 230, 1) 22%, rgba(50, 205, 213, 1) 98%);
+  transition: background 0.3s ease;
+}
+
+/* Styles the plus icoon*/
+.plus {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Styles the hidden/revealed content area inside each accordion item */
+.accordion-content {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  font-size: 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Styles questions component when  expanded and visible */
+.accordion-content.show {
+  max-height: 1000px;
+}

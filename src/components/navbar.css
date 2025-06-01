@@ -1,0 +1,99 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0 10px;
+  background: linear-gradient(138deg, #8632e6 22%, #32cdd5 98%);
+  color: white;
+  position: relative;
+  z-index: 100;
+}
+
+.sidetoggle {
+  width: 40px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 30px; 
+  margin-left: 20px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+/* Left section containing logo + company text */
+.left-section {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Logo styling */
+.logopart img {
+  width: 60px;
+  height: auto;
+  mix-blend-mode: screen;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+/* Company name styling */
+.logotext h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Tagline */
+.logotext p {
+  margin: 0;
+  font-size: 12px;
+  color: white;
+}
+
+/* Menu links, aligned left, next to logo+text */
+.pagesmenu {
+  display: flex;
+  align-items: center;
+  margin-left: 600px;
+  margin-right:40px;
+  height: 100%;
+}
+
+/* Individual menu links */
+.pagesmenu a {
+  margin-left: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  line-height: 1;
+  padding-top: 2px; /* fine-tuning vertical alignment */
+  cursor: pointer;
+}
+
+.pagesmenu a:hover {
+  color: rgb(132, 5, 211); /* No color change on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .pagesmenu {
+    display: none;
+  }
+
+  .sidetoggle {
+    display: block;
+  }
+
+  .logotext h1 {
+    font-size: 20px;
+  }
+
+  .logotext p {
+    font-size: 10px;
+  }
+}

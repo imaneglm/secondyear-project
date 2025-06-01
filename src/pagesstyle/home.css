@@ -1,0 +1,43 @@
+
+
+.Home {
+        display: grid;
+        margin-top: 30px;
+        grid-template-areas:
+          "sideslide hero right"
+          "sideslide miniabout right"
+          "sideslide services right";
+        height: 100vh;
+        gap: 5px;
+        background: white;
+      }
+      
+    
+      .Herosection {
+        grid-area: hero;
+        background: #edbfbf;
+        width:90%;
+        height: 20%;
+        text-align: center;
+        color: black;
+        
+        }
+      
+           .Herosection h1 {
+            margin-left: 20px;
+        color: black;
+        }
+      .Services {
+        grid-area: services;
+    
+      }
+      .Miniabout{
+        grid-area: miniabout;
+      }
+      .right {
+        grid-area: right;
+        background: #eee;
+      }
+      
+  
+    

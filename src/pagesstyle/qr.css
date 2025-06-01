@@ -1,0 +1,83 @@
+/* qr.css */
+
+/* Container for the QR code and form */
+.qr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin: 200px auto 0; 
+  gap: 100px;
+}
+/* Styling for the QR code icon */
+.qr-side:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.qr-side:first-child svg {
+  height: auto;
+}
+
+/* Styling for the form */
+.qr-side:last-child {
+  flex: 1;
+  background: linear-gradient(138deg, rgba(134, 50, 230, 1) 22%, rgba(50, 205, 213, 1) 98%);
+  padding: 1.5rem;
+  width: 600px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.qr-side:last-child h2 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.qr-side:last-child p {
+  color: aliceblue;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.qr-side:last-child label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.qr-side:last-child input {
+  width: 90%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.qr-side:last-child input:focus {
+  outline: none;
+  border-color: rgba(50, 205, 213, 1);
+}
+/* Styling for the form button */
+.qr-side form button {
+  width: 90%;
+  padding: 0.75rem;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-color: #50c2d0;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+.qr-side form button:hover {
+  background-color: #3a9ca1; 
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

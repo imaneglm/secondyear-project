@@ -1,0 +1,138 @@
+.log {
+  background-image: url('../assets/log.png'); /* adjust path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+/* Logo in top-left corner */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 160px;
+}
+
+/* Container for both form and image */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Left-side image */
+.graphic-section img {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Style the form */
+.form {
+  background: transparent;
+  backdrop-filter: blur(20px);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form h1 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+}
+
+/* Inputs */
+.inputuser {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Icons */
+.icon {
+  position: relative;
+  left: -30px;
+  top: -30px;
+}
+
+/* Remember section */
+.remember {
+  display: flex;
+  margin-left: 20px;
+  gap: 100px;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.remember a {
+  color: white;
+}
+
+.remember a:hover {
+  text-decoration: underline;
+}
+
+/* Submit button */
+.log button {
+  width: 80%;
+  padding: 12px;
+  margin: 20px auto 0 auto;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+}
+
+.log button:hover {
+  background-color: #574fd6;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Register link */
+.Registerlink {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.Registerlink a {
+  color: white;
+}
+
+.Registerlink a:hover {
+  text-decoration: underline;
+}
+
+/* Bottom-centered h2 */
+.log h2 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font-weight: 500;
+}

@@ -1,0 +1,99 @@
+/* Top-level styling for Package component */
+.Package {
+    height: 40px;
+    margin: 30px;
+    width: 95%;
+    border-radius: 18px;
+    color: white;
+    margin-right: -20%;
+}
+
+/* List item (<li>) styling for packages */
+li {
+    gap: 25px;
+    border-radius: 18px;
+    width: 90%;
+    height: 100px;
+    background: linear-gradient(138deg, rgba(134, 50, 230, 1) 22%, rgba(50, 205, 213, 1) 99%);
+}
+
+/* Header text inside list items */
+li h3 {
+    margin-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Paragraph text inside list items */
+li p {
+    margin-top: 10px;
+    margin-left: 50px;
+    color: whitesmoke;
+}
+
+/* Container for the package input and button */
+.package-container {
+    padding: 20px;
+}
+
+/* Input field styling in the package container */
+.package-container input {
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 50%;
+    align-items: center;
+}
+
+/* Button styling in the package container */
+.package-container button {
+    max-width: 90px;
+    margin-left: 50px;
+}
+
+/* List of packages layout and spacing */
+.packages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual package card styling */
+.package-card {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    background: linear-gradient(138deg, rgba(134, 50, 230, 1) 22%, rgba(50, 205, 213, 1) 99%);
+    border-radius: 12px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 14px;
+    width: 95%;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+/* Text inside package card */
+.package-card p {
+    align-content: center;
+    margin: 0 15px 0 0;
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .package-card {
+        flex-direction: column;
+        white-space: normal;
+    }
+
+    .package-card p {
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+}

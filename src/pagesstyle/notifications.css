@@ -1,0 +1,87 @@
+
+
+.notifications-container {
+    margin: 50px;
+    width: 90%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.notifications-box {
+    background:linear-gradient(138deg, rgba(134, 50, 230, 1) 22%, rgba(50, 205, 213, 1) 98%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 89%;
+    width: 100%;
+}
+
+/* Notifications List */
+.notifications-list {
+    list-style: none;
+    max-height: 500px;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.notifications-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    height: 50px;
+    transition: 0.3s;
+}
+
+/* Unread notifications */
+.notifications-list .unread {
+    background: #ffebeb;
+    font-weight: bold;
+}
+
+/* Mark as Read Button */
+.mark-read-btn {
+    background-color: rgb(46, 46, 138);
+    color: white;
+    border: none;
+    width: 90px;
+    margin-right: -5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mark-read-btn:hover {
+    background-color: rgb(49, 14, 176);
+    color: black;
+
+}
+
+/* Clear All Button */
+.clear-btn {
+    background-color: rgb(46, 46, 138);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.clear-btn:hover {
+    background: #cc0000;
+    color: black;
+}
+
+/* No Notifications Message */
+.no-notifications {
+    color: gray;
+    font-style: italic;
+}

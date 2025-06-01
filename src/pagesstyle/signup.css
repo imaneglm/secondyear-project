@@ -1,0 +1,96 @@
+/* Signup.css */
+
+.form-container {
+    background-image: url('../assets/log.png'); /* adjust path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh; /* or whatever fits your layout */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .signup-form {
+    background:transparent;
+    backdrop-filter: blur(20px);
+    padding: 30px 40px;
+    border-radius: 18px;
+    height: 550px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .signup-form h1 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    color:white;
+    text-align: center;
+  }
+  
+ 
+  .input-box {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .input-box .icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color:white;
+    font-size: 18px;
+  }
+  
+  .input-box  input {
+    width: 100%;
+    margin: 10px 0;
+    background:transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    padding: 12px 12px 12px 40px; /* left padding for icon space */
+    font-size: 16px;
+  
+  }
+  
+  
+  .signup-form button {
+    width: 80%;
+    padding: 12px;
+    margin: 20px auto 0 auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+  
+  .signup-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .register-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .register-link a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,42 @@
+/*Styling file for the service section*/
+.Services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+    padding: 40px;
+  }
+  
+  .servicescard {
+    background-color:rgb(55, 134, 173);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .servicescard:hover {
+    background-color: #bfdbfe;
+    transform: translateY(-4px);
+  }
+  
+  .serviceicon {
+    margin-bottom: 12px;
+    
+  }
+  
+  .servicename {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+  .servicedesrib{
+    color: rgb(50, 55, 59);
+  }

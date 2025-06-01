@@ -1,0 +1,39 @@
+/* Styling for the main Hero section layout */
+.Herosection {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Styling for the placement and responsiveness of the image */
+.right img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for both the introduction text and image containers */
+.herosectiontext, .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the main heading inside the Hero section */
+.herosectiontext h1 {
+    font-size: 40px;
+    padding: 0;
+}
+
+/* Aligns heading and paragraph text to the center and stacks them vertically */
+.herosectiontext h1, .herosectiontxt p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
